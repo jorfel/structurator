@@ -1,0 +1,16 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Structurator"
+PROJECT_BRIEF          = "Reads C++ classes directly from various document formats."
+USE_MDFILE_AS_MAINPAGE = README.md
+OUTPUT_DIRECTORY       = doxydocs
+INPUT                  = README.md src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.hpp
+GENERATE_LATEX         = NO
+JAVADOC_AUTOBRIEF      = YES
+EXTRACT_ALL            = YES
+EXTRACT_STATIC         = YES
+EXTRACT_PRIVATE        = YES
+EXCLUDE_SYMBOLS        = STC_*
+ENUM_VALUES_PER_LINE   = 1
+PREDEFINED             = STC_DEFINE_MESSAGES=

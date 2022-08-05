@@ -1,0 +1,5 @@
+file(GLOB_RECURSE STRUCTURATOR_TEST_SRC_FILES CONFIGURE_DEPENDS *.cpp)
+add_executable(tests ${STRUCTURATOR_TEST_SRC_FILES})
+set_property(TARGET tests PROPERTY CXX_STANDARD 17)
+target_link_libraries(tests PRIVATE ${PROJECT_NAME})
+target_include_directories(tests PRIVATE ../extlib/header-only)

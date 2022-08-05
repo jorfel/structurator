@@ -1,0 +1,6 @@
+.vs
+.vscode
+CMakeSettings.json
+build
+out
+doxydocs
